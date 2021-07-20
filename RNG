@@ -1,0 +1,5 @@
+import random as rd
+dataTemp = [0]*100
+for i in range(100):
+  dataTemp[i] = rd.randrange(70,85)
+dataTemp
