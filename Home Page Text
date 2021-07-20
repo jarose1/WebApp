@@ -1,0 +1,12 @@
+body {
+  background-color: #D3EAE2;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+h4 {
+  color: #FFFFFF;
+  text-align: center; 
+  font-family: 'Oswald', sans-serif;
+  padding-top: 1.0em;
+}
