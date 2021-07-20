@@ -1,0 +1,37 @@
+import random as rd
+
+from flask import Flask, render_template, url_for 
+
+
+app: Flask = Flask(__name__)
+app = Flask(__name__)
+
+#HomePage
+@app.route('/')
+def home():
+	return render_template('home.html')
+
+#TempPage
+
+@app.route('/temp', methods=['GET'])
+
+def TemperatureVariables():
+	dataTemp = [0]*100
+	for i in range(100):
+		dataTemp[i] = rd.randrange(70,85)
+	#return render_template('page.html'), str(dataTemp)
+	#return str(dataTemp) #, render_template('page.html'))
+	return render_template('page.html', data=dataTemp)
+
+#HumidityPage
+
+@app.route('/humidity', methods=['GET'])
+
+def random2():
+	dataHumidity = [0]*100
+	for i in range(100):
+		dataHumidity[i] = rd.randrange(20,30)
+	return render_template('HumidityPage.html', data=dataHumidity)
+	
+if __name__ == '__main__':
+	app.run(debug=True, host='0.0.0.0')
