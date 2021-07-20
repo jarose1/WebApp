@@ -1,0 +1,54 @@
+<!-- OLD FILE 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charsel="utf-8">
+  <link rel="stylesheet" href="{{url_for -->
+
+                               
+<!--Updated Home Page Code -->                              
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/homestyle.css')}}">
+	<title>Home Page</title>
+</head>
+
+ <!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="/" class="w3-button w3-bar-item">Home</a>
+  <a href="/temp" class="w3-button w3-bar-item">Temperature</a>
+  <a href="/humidity" class="w3-button w3-bar-item">Humidity</a>
+</nav> 
+
+<h3>Victoria's Sensor Data</h3>
+
+<body>
+Welcome to the HOMEPAGE!
+
+ 
+  <h3 class="w3-wide">Sensor Data</h3>
+  <p class="w3-opacity"><i>DHT11 Raspberry Pi Sensors</i></p>
+
+<img src="https://components101.com/sensors/dht11-temperature-sensor" alt="DHT11–Temperature and Humidity Sensor">
+
+<img src="https://en.wikipedia.org/wiki/Raspberry_Pi" alt="Raspberry Pi 4 Model B from the side.">
+
+ <table style="width:100%">
+  <tr>
+    <th>Temperature</th>
+    <th>Humidity</th>
+  </tr>
+  <tr>
+    <td><a href="/temp" class="w3-button w3-bar-item">Temperature</a></td>
+    <td><a href="/humidity" class="w3-button w3-bar-item">Humidity</a></td>
+  </tr>
+  <tr>
+    <td>Temperature Measurements (all measured in Fahrenheit)</td>
+    <td>Humidity Measurements (all measured as a percent)</td>
+  </tr>
+</table> 
+</body>
+
+</html>
